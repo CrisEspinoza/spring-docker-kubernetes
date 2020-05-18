@@ -1,0 +1,19 @@
+						Kubernetes:
+
+* En una primera instancia se realiza la instancia de la aplicación de spring:
+	* kubectl run demo-backend --image=demo-backend:latest --port=1818 --image-pull-policy Never
+
+* Luego, se realiza, la verificación del despliegue de la aplicación:
+	* kubectl get deployments
+
+* Se verifica que el servicio se haya creado correctamente:
+	* kubectl get services
+
+
+* Finalmente, se realiza el llamado al servicio levantado:
+	* minikube service demo-backend
+
+
+* Como resultado tendremos la dirección de ip del nodo en el cual se levanto el servicio y el puerto en el cual fue desplegado.
+	* Teniendo en cuenta lo anterior, tendriamos algo como: 
+		* http://<Node_IP>:<Node_PORT>
