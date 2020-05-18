@@ -1,0 +1,6 @@
+						Docker:
+
+* En una primera instancia debemos realizar el llamado al script "./Docker.sh"
+
+* Finalmente, este realizara el despliegue de la aplicación en el puerto 1818, es posible probar la ejecución de forma correcta de esta aplicación, visitando mediante postman el siguiente servicio GET:
+	* http://localhost:1818/hello
